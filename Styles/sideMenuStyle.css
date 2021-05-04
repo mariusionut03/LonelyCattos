@@ -17,6 +17,20 @@ body
 	transition: 0.5s;
 }
 
+#sideMenuSmall
+{
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #0d001a;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
+}
+
 .sideMenuButtons
 {
 	margin: 24px 0 0 12px;
@@ -31,7 +45,29 @@ body
 	outline: none;
 }
 
+.sideMenuButtonsSmall
+{
+	margin: 30px 0 0 12px;
+	font-size: 25px;
+	color: white;
+	display: block;
+	background-color: black;
+	width: 50px;
+	height: 50px;
+	border: 1px white solid;
+	font-family: monospace;
+	outline: none;
+}
+
 .sideMenuButtons:hover
+{
+	background-color: white;
+	color: black;
+	transition: 0.5s;
+	border-color: black;
+}
+
+.sideMenuButtonsSmall:hover
 {
 	background-color: white;
 	color: black;
@@ -47,6 +83,17 @@ body
 	background-color: transparent;
 	border: 0;
 	margin: -30px 0 0 42px;
+	outline: none;
+}
+
+#closeButtonSmall
+{
+	width: 40px;
+	height: 40px;
+	font-size: 45px;
+	background-color: transparent;
+	border: 0;
+	margin: -15px 0 30px 0;
 	outline: none;
 }
 
