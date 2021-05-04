@@ -3,6 +3,17 @@ body
 	background-image: linear-gradient(to right, #001a1a, #003333, #001a1a);
 }
 
+#snowman
+{
+	position: relative;
+	font-size: 64px;
+}
+
+#content
+{
+	margin-left: 180px;
+}
+
 #sideMenu
 {
 	height: 100%;
@@ -33,7 +44,7 @@ body
 
 .sideMenuButtons
 {
-	margin: 24px 0 0 12px;
+	margin: 30px 0 0 12px;
 	font-size: 25px;
 	color: white;
 	display: block;
@@ -93,8 +104,20 @@ body
 	font-size: 45px;
 	background-color: transparent;
 	border: 0;
-	margin: -15px 0 30px 0;
+	margin: -15px 0 35px 0;
 	outline: none;
+}
+
+#settingsButton
+{
+	position: absolute;
+	bottom: 80px;
+}
+
+#settingsButtonSmall
+{
+	position: absolute;
+	bottom: 80px;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */

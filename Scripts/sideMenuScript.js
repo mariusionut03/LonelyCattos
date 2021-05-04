@@ -1,3 +1,5 @@
+
+
 function openIndex()
 {
 	var path = window.location.pathname;
@@ -35,6 +37,16 @@ function openAbout()
 	if(page != "about.html")
 	{
 		window.location.href='about.html'
+	}
+}
+
+function openSettings()
+{
+	var path = window.location.pathname;
+	var page = path.split("/").pop();
+	if(page != "settings.html")
+	{
+		window.location.href='settings.html'
 	}
 }
 
