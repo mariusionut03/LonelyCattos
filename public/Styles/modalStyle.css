@@ -1,0 +1,25 @@
+.modal
+{
+    background-color: #060d13;
+}
+
+#modal-login h4, #modal-signup h4, #modal-login label, #modal-signup label
+{
+    color: aliceblue;
+}
+
+#modal-login input, #modal-signup input
+{
+    color: aliceblue;
+}
+
+#modal-login button, #modal-signup button
+{
+    background-color: black;
+    color: aliceblue; 
+}
+#modal-login button:hover, #modal-signup button:hover
+{
+    background-color: aliceblue;
+    color: black; 
+}

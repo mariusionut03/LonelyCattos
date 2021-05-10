@@ -108,13 +108,25 @@ body
 	outline: none;
 }
 
-#settingsButton
+#settingsButton, #loginButton
+{
+	position: absolute;
+	bottom: 160px;
+}
+
+#settingsButtonSmall, #loginButtonSmall
+{
+	position: absolute;
+	bottom: 160px;
+}
+
+#logoutButton, #signupButton
 {
 	position: absolute;
 	bottom: 80px;
 }
 
-#settingsButtonSmall
+#logoutButtonSmall, #signupButtonSmall
 {
 	position: absolute;
 	bottom: 80px;
