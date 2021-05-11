@@ -1,0 +1,32 @@
+#catalogTitle{
+    color: #adc2eb;
+    border: 1px #adc2eb solid;
+    padding: 20px 20px 30px 20px;
+    position: relative;
+    margin: 0 auto;
+    display: table;
+    margin-top: 45px;
+}
+
+.container {
+    position: relative;
+    top: 25px;
+    background-color: #1f3d7a;
+}
+
+
+.collapsible-header
+{
+    color: aliceblue;
+    font-family: monospace;
+    font-size: 17px;
+    background-color: #0a1429;
+}
+
+.collapsible-body
+{
+    color: aliceblue;
+    font-family: monospace;
+    font-size: 17px;
+    background-color: #050a14;
+}
