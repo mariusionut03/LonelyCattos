@@ -30,3 +30,23 @@
     font-size: 17px;
     background-color: #050a14;
 }
+
+#createButton {
+    font-family: monospace;
+    height: 30px;
+    width: 170px;
+    border: 1px aliceblue solid;
+    position: relative;
+    margin: 0 auto;
+    display: table;
+    top: 213px;
+    color: aliceblue;
+    background-color:#0a1429;
+}
+
+#createButton:hover {
+    background-color: aliceblue;
+    color: black;
+    border-color: black;
+    transition-duration: 0.4s;
+}

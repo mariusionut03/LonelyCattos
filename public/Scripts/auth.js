@@ -1,6 +1,11 @@
 //  get data
 db.collection('Catalog-Projects').get().then(snapshot => {
-    setupGuides(snapshot.docs);
+    var path = window.location.pathname;
+	var page = path.split("/").pop();
+	if(page == "catalog.html")
+	{
+        setupGuides(snapshot.docs);
+	}
 });
 
 
@@ -8,7 +13,9 @@ db.collection('Catalog-Projects').get().then(snapshot => {
 auth.onAuthStateChanged(user => {
     if (user) {
         console.log('user logged in: ', user);
+        setupUI(user);
     } else {
+        setupUI();
         console.log('user logged out');
     }
 });
@@ -33,6 +40,11 @@ signupForm.addEventListener('submit', (e) => {
 //logout
 const logout = document.querySelector('#logout');
 logout.addEventListener('click', (e) => {
+    e.preventDefault();
+    auth.signOut();
+});
+const logoutSmall = document.querySelector('#logoutSmall');
+logoutSmall.addEventListener('click', (e) => {
     e.preventDefault();
     auth.signOut();
 });

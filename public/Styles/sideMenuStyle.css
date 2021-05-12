@@ -120,13 +120,13 @@ body
 	bottom: 160px;
 }
 
-#logoutButton, #signupButton
+#logout, #signupButton
 {
 	position: absolute;
 	bottom: 80px;
 }
 
-#logoutButtonSmall, #signupButtonSmall
+#logoutSmall, #signupButtonSmall
 {
 	position: absolute;
 	bottom: 80px;
@@ -136,6 +136,10 @@ body
 #content {
   transition: margin-left .5s;
   padding: 20px;
+}
+
+.logged-in, .logged-out {
+	display: none;
 }
 
 #homeButton
