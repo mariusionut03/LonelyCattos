@@ -3,23 +3,35 @@
     background-color: #060d13;
 }
 
-#modal-login h4, #modal-signup h4, #modal-login label, #modal-signup label
+#modal-login h4, #modal-signup h4, #modal-login label, #modal-signup label, #modal-create h4, #modal-create label
 {
     color: aliceblue;
 }
 
-#modal-login input, #modal-signup input
+#modal-login input, #modal-signup input, #modal-create input
 {
     color: aliceblue;
 }
 
-#modal-login button, #modal-signup button
+#modal-login button, #modal-signup button, #modal-create button
 {
     background-color: black;
     color: aliceblue; 
 }
-#modal-login button:hover, #modal-signup button:hover
+#modal-login button:hover, #modal-signup button:hover, #modal-create button:hover
 {
     background-color: aliceblue;
     color: black; 
+}
+
+#modal-create
+{
+    height: 485px;
+}
+
+#modal-create p
+{
+    color:aliceblue;
+    font-family: monospace;
+    font-size: 14px;
 }

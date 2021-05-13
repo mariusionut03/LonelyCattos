@@ -48,7 +48,7 @@
 
 	<div id="content">
 
-		<button id="createButton">Create new project</button>
+		<button id="createButton" class="logged-in modal-trigger" data-target="modal-create">Create new project</button>
 		<!-- Title -->
 		<h1 id="catalogTitle">LC :: Catalog</h1>
 
@@ -59,26 +59,6 @@
 			</ul>
 		</div>
 	</div>
-
-
-
-	<!-- CREATE PROJECT MODAL -->
-		<div id="modal-create" class="modal">
-			<div class="modal-content">
-				<h4>Create Guide</h4><br />
-				<form id="create-form">
-				<div class="input-field">
-					<input type="text" id="title" required>
-					<label for="title">Guide Title</label>
-				</div>
-				<div class="input-field">
-					<textarea id="content" class="materialize-textarea" required></textarea>
-					<label for="content">Guide Content</label>
-				</div>
-				<button class="btn yellow darken-2 z-depth-0">Create</button>
-				</form>
-			</div>
-		</div>
 	
 
 
@@ -116,6 +96,33 @@
 			<label for="login-password">Your password</label>
 			</div>
 			<button class="btn darken-2 z-depth-0">Login</button>
+		</form>
+		</div>
+	</div>
+
+	<!-- Create MODAL -->
+	<div id="modal-create" class="modal">
+		<div class="modal-content">
+		<h4>Create Project</h4><br />
+		<form id="create-form">
+			<div class="input-field">
+				<input type="text" id="createTitle" required />
+				<label for="title">Title <span style="color:red;">*</span></label>
+			</div>
+			<div class="input-field">
+				<input type="text" id="createContent" required />
+				<label for="content">Content <span style="color:red;">*</span></label>
+			</div>
+			<div class="input-field">
+				<input type="text" id="createLinkGithub" />
+				<label for="linkgithub">GitHub</label>
+			</div>
+			<div class="input-field">
+				<input type="text" id="createLinkWeb" />
+				<label for="linkweb">Web Link</label>
+			</div>
+			<p>Fields with <span style="color:red;">*</span> are required</p>
+			<button class="btn darken-2 z-depth-0" type="submit">Create</button>
 		</form>
 		</div>
 	</div>
