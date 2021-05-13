@@ -1,5 +1,5 @@
 //  get data
-db.collection('Catalog-Projects').get().then(snapshot => {
+db.collection('Catalog-Projects').onSnapshot(snapshot => {
     var path = window.location.pathname;
 	var page = path.split("/").pop();
 	if(page == "catalog.html")
@@ -7,7 +7,6 @@ db.collection('Catalog-Projects').get().then(snapshot => {
         setupGuides(snapshot.docs);
 	}
 });
-
 
 // listen for auth status changes
 auth.onAuthStateChanged(user => {
@@ -18,6 +17,26 @@ auth.onAuthStateChanged(user => {
         setupUI();
         console.log('user logged out');
     }
+});
+
+// create new project
+const createForm = document.querySelector('#create-form');
+createForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    db.collection('Catalog-Projects').add({
+        title: createForm['createTitle'].value,
+        content: createForm['createContent'].value,
+        githublink: createForm['createLinkGithub'].value,
+        weblink: createForm['createLinkWeb'].value
+    }).then(() => {
+        // close the modal and reset form
+        const modal = document.querySelector('#modal-create');
+        M.Modal.getInstance(modal).close();
+        createForm.reset();
+    }).catch(err => {
+        console.log(err.message);
+    })
 });
 
 //singup
